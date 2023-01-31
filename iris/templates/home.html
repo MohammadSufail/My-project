@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <form action="/predict" method="POST">
+        index: <input type="text" name="index">
+        sepal_length: <input type="text" name="sepal_length">
+        sepal_width: <input type="text" name="sepal_width">
+        petal_length: <input type="text" name="petal_length">
+        petal_width: <input type="text" name="petal_width">
+        Class:{{result}} <br>
+        <input type="submit" value="Predict">
+        
+       </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

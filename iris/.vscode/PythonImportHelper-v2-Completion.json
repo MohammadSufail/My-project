@@ -1,0 +1,53 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    result =''\n    return render_template('home.html',**locals())\n@app.route('/predict', methods=['POST','GET'])\ndef predict():\n    index = float(request.form['index'])\n    sepal_length = float(request.form['sepal_length'])\n    sepal_width = float(request.form['sepal_width']) \n    petal_length = float(request.form['petal_length'])\n    petal_width = float(request.form['petal_width'])  ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict():\n    index = float(request.form['index'])\n    sepal_length = float(request.form['sepal_length'])\n    sepal_width = float(request.form['sepal_width']) \n    petal_length = float(request.form['petal_length'])\n    petal_width = float(request.form['petal_width'])  \n    result =  model.predict([[index,sepal_length,sepal_width,petal_length,petal_width]])[0]\n    return render_template('home.html',**locals())\nif __name__ == '__main__':                               \n        app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    }
+]
